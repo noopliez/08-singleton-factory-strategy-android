@@ -53,14 +53,6 @@ public class Meal {
         this.notes = notes;
     }
 
-    public boolean isVegetarian() {
-        boolean containsMeat = false;
-        for(String s : notes){
-            containsMeat = containsMeat || s.contains("fleisch");
-        }
-        return !containsMeat;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
